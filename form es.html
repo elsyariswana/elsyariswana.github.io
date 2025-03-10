@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP PT. Ruang Cipta Teknologi</title>
+    <link rel="stylesheet" href="form es.css" />
+    <!-- Font Awesome Cdn link -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="sidebar">
+        <div class="log"></div>
+        <ul class="menu">
+            <li>
+                <a href="dashboard.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a> 
+            </li>
+            <li>
+                <a href="recap es.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Engineering Service</span>
+                </a> 
+            </li>
+            <li>
+                <a href="recap rnd.html">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <span>R&D</span>
+                </a> 
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a> 
+            </li>
+        </ul>
+    </div>
+    <div class="main--content"> 
+        <div class ="container">
+            <header>Registration Form</header>
+            <form action="3">
+                <div class="form first">
+                    <div class="informasi-pelanggan">
+                       <span class="title">Informasi Pelanggan</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Nama Perusahaan</label>
+                                <input type="text" placeholder="nama perusahaan" required>
+                            </div>                        
+                            <div class="input-field">
+                                <label>Alamat Perusahaan</label>
+                                <input type="text" placeholder="alamat perusahaan" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Nama PIC</label>
+                                <input type="text" placeholder="nama PIC" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Jabatan PIC</label>
+                                <input type="text" placeholder="jabatan PIC" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Nomor Telepon</label>
+                                <input type="text" placeholder="nomor telepon" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Email PIC</label>
+                                <input type="text" placeholder="email PIC" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-type">
+                    <span class="title">Service Types</span>
+                        <div class="fields">  
+                            <div class="checkbox-jenispelayanan">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="1">
+                                    <label for="1">SCADA System</label>
+                                    <input type="checkbox" id="2">
+                                    <label for="2">IIoT System</label>
+                                    <input type="checkbox" id="3">
+                                    <label for="3">Renewable Energy (Solar System)</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="rincian-permintaan">
+                    <span class="title">Rincian Permintaan Layanan</span>
+                        <div class="fields">                                
+                            <div class="checkbox-jenispelayanan">
+                            <label>Jenis Layanan (pilih yang sesuai)</label>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="1">
+                                    <label for="1">Instalasi Baru</label>
+                                    <input type="checkbox" id="2">
+                                    <label for="2">Maintenance / Perawatan</label>
+                                    <input type="checkbox" id="3">
+                                    <label for="3">Upgrade / Migrasi</label>
+                                    <input type="checkbox" id="4">
+                                    <label for="4">Troubleshooting</label>
+                                    <input type="checkbox" id="5">
+                                    <label for="5">Pelatihan</label>
+                                    <input type="checkbox" id="6">
+                                    <label for="6">Lainnya</label>
+                                 </div>
+                             </div>                    
+                             <div class="input-field">
+                                <label>Merk & Model Perangkat</label>
+                                <input type="text" placeholder="Masukkan Merk & Model Perangkat" required>
+                             </div>
+                             <div class="input-field">
+                                <label>Versi Software yang Digunakan</label>
+                                <input type="text" placeholder="Masukkan Versi Software yang Digunakan" required>
+                             </div>
+                             <div class="input-field">
+                                <label>Jumlah Node/Workstation</label>
+                                <input type="text" placeholder="Masukkan Jumlah Node/Workstation" required>
+                             </div>
+                             <div class="input-field">
+                                <label>Komponen yang Terkait (PLC, HMI, Sensor, dll)</label>
+                                <input type="text" placeholder="Masukkan Komponen yang Terkait (PLC, HMI, Sensor, dll.)" required>
+                             </div>     
+                         </div>
+                        </div>
+
+                    <div class="detail-kunjungan">
+                    <span class="title">Detail Kunjungan dan Pekerjaan </span>
+                            <div class="fields">
+                                <div class="input-field">
+                                <label>Tanggal Permintaan Jasa</label>
+                                <input type="text" placeholder="masukkan tanggal" required>
+                                </div>
+                                <div class="input-field">
+                                <label>Lokasi/Site</label>
+                                <input type="text" placeholder="masukkan alamat lokasi/site" required>
+                                </div>
+                                <div class="input-field">
+                                <label>Estimasi Durasi Pekerjaan</label>
+                                <input type="text" placeholder="masukkan estimasi durasi" required>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="button">
+                        <a href="recap es.html">
+                            <button class = "submit">SUBMIT</button>
+                        </a>
+                    </div> 
+                </div>
+            </form>
+        </div>        
+    </div>
+</body>
+</html>

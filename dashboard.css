@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+
+}
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 99,186,255);
+}
+.sidebar:hover {
+    width: 270px;
+    transition: 0.5s;
+}
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+.menu{
+   height: 88%;
+   position: relative;
+   list-style: none;
+   padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover,
+.active {
+   background: #e0e0e058;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span{
+    overflow: hidden;
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* **** main body section **** */
+.main--content {
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+}
+
+.header--wrapper img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+} 
+
+.header--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.header--title {
+    color: rgba(113, 99,186,255);
+}
+.user--info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.search--box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(237, 237,237);
+    color: rgba(113, 99,186,255);
+    padding: 4px 12px;
+    border-radius: 5px;
+}
+.search--box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+.search--box i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out; 
+}
+.search--box i:hover {
+    transform: scale(1.1);
+    color: rgba(113, 99,186,255);
+}
+/* **** summary project **** */
+.container {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: rgba(113, 99,186,255);
+}
+.container header::before {
+    content: "";
+    position: absolute;
+    left: 0;   
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: rgba(113, 99,186,255);
+}
+.card--wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.main--title {
+    font-size: 20px;
+    padding-bottom: 15px;
+    color: rgba(113, 99,186,255);
+}
+.card {
+    background: rgba(237, 237,237);
+    border-radius: 10px;
+    padding: 1.2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: calc(100% / 3 - 15px);
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease-out;  
+    flex-direction: column;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.card--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+.project {
+   display: flex;
+   flex-direction: column;
+   
+}
+.title{
+    font-size: 15px;
+    font-weight: 200;
+}
+.name{
+    font-size: 30px;
+    font-weight: 600;
+}
+.duedate{
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 15px;
+}

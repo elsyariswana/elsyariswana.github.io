@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP PT. Ruang Cipta Teknologi</title>
+    <link rel="stylesheet" href="recap es.css" />
+    <!-- Font Awesome Cdn link -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="sidebar">
+        <div class="log"></div>
+        <ul class="menu">
+            <li>
+                <a href="dashboard.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a> 
+            </li>
+            <li class="active">
+                <a href="recap es.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Engineering Service</span>
+                </a> 
+            </li>
+            <li>
+                <a href="recap rnd.html">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <span>R&D</span>
+                </a> 
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a> 
+            </li>
+        </ul>
+    </div>
+
+    <div class="main--content"> 
+        <div class="header--wrapper">
+            <div class="header--title">
+                <h2>Permintaan Jasa</h2>
+            </div>
+            <div class="user--info">
+            <div class="search--box">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search here" />
+            </div>
+            <a href="form es.html">
+                <button class= "add_new"> + Add New</button>
+            </a>
+            </div>
+        </div>
+        
+        <div class ="container">
+        <div class="table-section">
+           <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Start Date</th>
+                    <th>Client Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>XX/XX/XXXX</td>
+                    <td>PT. XYZ</td>
+                    <td>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>XX/XX/XXXX</td>
+                    <td>PT. XYZ</td>
+                    <td>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>XX/XX/XXXX</td>
+                    <td>PT. XYZ</td>
+                    <td>
+                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+           </table>
+        </div> 
+        </div>       
+    </div>
+</body>
+</html>

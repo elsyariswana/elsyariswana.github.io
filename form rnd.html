@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCADA</title>
+    <link rel="stylesheet" href="form rnd.css" />
+    <!-- Font Awesome Cdn link -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="sidebar">
+        <div class="log"></div>
+        <ul class="menu">
+            <li>
+                <a href="dashboard.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a> 
+            </li>
+            <li>
+                <a href="recap es.html">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <span>Engineering Service</span>
+                </a> 
+            </li>
+            <li>
+                <a href="recap rnd.html">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <span>R&D</span>
+                </a> 
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a> 
+            </li>
+        </ul>
+    </div>
+
+    <div class="main--content"> 
+        <div class ="container">
+            <header>Product Design Form</header>
+            <form action="3">
+                <div class="form first">
+                    <div class="scada-equipment">
+                       <span class="title">Equipment</span>
+                       <div class="fields">
+                            <div class="input-field">
+                                <label>Programmable Logic Controller</label>
+                                <input type="text" placeholder="PLC" required>
+                            </div>                        
+                            <div class="input-field">
+                                <label>Human Machine Interface</label>
+                                <input type="text" placeholder="HMI" required>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div class="software">
+                        <span class="title">Software</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Programmable Logic Controller</label>
+                                <input type="text" placeholder="PLC" required>
+                            </div>                        
+                            <div class="input-field">
+                                <label>Human Machine Interface</label>
+                                <input type="text" placeholder="HMI" required>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div class="jumlah">
+                        <span class="title">Jumlah Input dan Output</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Analog Input</label>
+                                <input type="text" placeholder="" required>
+                            </div>                        
+                            <div class="input-field">
+                                <label>Analog Output</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Digital Input</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Digital Output</label>
+                                <input type="text" placeholder="" required>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div class="protokol-komunikasi">
+                        <span class="title">Protokol Komunikasi</span>
+
+                        <div class="fields">  
+                            <div class="checkbox-protokolkomunikasi">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="1">
+                                    <label for="1">Modbus TCP/IP</label>
+                                    <input type="checkbox" id="2">
+                                    <label for="2">Modbus RTU</label>
+                                    <input type="checkbox" id="3">
+                                    <label for="3">Profibus</label>
+                                    <input type="checkbox" id="4">
+                                    <label for="3">Profinet</label>
+                                    <input type="checkbox" id="5">
+                                    <label for="3">Lainnya</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pic">
+                    <span class="title">PIC PLC Programming</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Nama PIC</label>
+                                <input type="text" placeholder="Nama PIC" required>
+                            </div>                        
+                            <div class="input-field">
+                                <label>Email PIC</label>
+                                <input type="text" placeholder="Email PIC" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Posisi/Jabatan</label>
+                                <input type="text" placeholder="Posisi/Jabatan PIC" required>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div class="pic">
+                    <span class="title">PIC HMI Programming</span>
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label>Nama PIC</label>
+                                    <input type="text" placeholder="Nama PIC" required>
+                                </div>                        
+                                <div class="input-field">
+                                    <label>Email PIC</label>
+                                    <input type="text" placeholder="Email PIC" required>
+                                </div>
+                                <div class="input-field">
+                                    <label>Posisi/Jabatan</label>
+                                    <input type="text" placeholder="Posisi/Jabatan PIC" required>
+                                </div>
+                           </div>
+                    </div>
+
+                    <div class="path">
+                    <span class="title">PLC Program File Path</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <input type="text" placeholder="File Path" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <input type="submit" value="SUBMIT">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

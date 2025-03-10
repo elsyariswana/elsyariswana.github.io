@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+
+}
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 99,186,255);
+}
+.sidebar:hover {
+    width: 270px;
+    transition: 0.5s;
+}
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+.menu{
+   height: 88%;
+   position: relative;
+   list-style: none;
+   padding: 0;
+}
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover,
+.active {
+   background: #e0e0e058;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span{
+    overflow: hidden;
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* **** main body section **** */
+.main--content {
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+}
+
+.container {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: rgba(113, 99,186,255);
+}
+.container header {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(113, 99,186,255);
+}
+.container header::before {
+    content: "";
+    position: absolute;
+    left: 0;   
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: rgba(113, 99,186,255);
+}
+/* **** form **** */
+.container form {
+    position: relative;
+    min-height: 490px;
+    margin-top: 16px;
+    background-color: #fff;
+}
+.container form .informasi-pelanggan{
+    margin-top: 30px;
+}
+.container form .rincian-permintaan{
+    margin-top: 30px;
+}
+.container form .service-type{
+    margin-top: 30px;
+}
+.container form .detail-kunjungan{
+    margin-top: 30px;
+}
+.container form .pic{
+    margin-top: 30px;
+}
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: rgba(113, 99,186,255);
+}
+.container form .fields {
+    margin-top: 10px;
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+form .fields .input-field {
+    display: flex;
+    width: calc(100% / 2 - 15px);
+    flex-direction: column;
+}
+.input-field {
+    background: #fff;
+    color: rgba(113, 99,186,255);
+}
+.input-field label {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(113, 99,186,255);
+}
+.input-field input {
+    border: none;
+    outline: none;
+    background: rgba(237, 237,237);;
+    border-radius: 5px;
+    align-items: center;
+    padding: 4px 12px;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: justify;    
+}
+.checkbox-jenispelayanan label {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(113, 99,186,255);
+}
+.checkbox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;  
+}
+.checkbox label{
+    padding-right: 30px;
+    margin: 5px;
+}
+.button {
+    background: rgba(113, 99,186,255);
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px;  
+    margin-top: 10px; 
+    height: 100%;
+    width: 100%;
+}
+.submit {
+    background: rgba(113, 99,186,255);
+    color: #fff;
+    cursor: pointer;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    height: 100%;
+    width: 100%;  
+}
+
